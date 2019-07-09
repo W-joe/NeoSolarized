@@ -150,7 +150,7 @@ let colors_name = "NeoSolarized"
     let s:gui_blue        = "#268bd2"
     let s:gui_cyan        = "#2aa198"
     let s:gui_green       = "#719e07" "experimental
-    "let s:green       = "#859900" "original
+    "let s:gui_green       = "#859900" "original
 
     let s:term_mode       = "cterm"
     let s:term_base03      = "8"
@@ -453,13 +453,13 @@ exe "hi! Todo"           .s:fmt_bold   .s:fg_magenta.s:bg_none
 " ---------------------------------------------------------------------
 if  (g:neosolarized_visibility=="high")
     exe "hi! SpecialKey" .s:fmt_revr   .s:fg_red    .s:bg_none
-    exe "hi! NonText"    .s:fmt_bold   .s:fg_red    .s:bg_none
+    exe "hi! NonText"    .s:fmt_bold   .s:fg_base02 .s:bg_none
 elseif  (g:neosolarized_visibility=="low")
     exe "hi! SpecialKey" .s:fmt_bold   .s:fg_base02 .s:bg_none
-    exe "hi! NonText"    .s:fmt_bold   .s:fg_base02 .s:bg_none
+    exe "hi! NonText"    .s:fmt_bold   .s:fg_base01 .s:bg_none
 else
     exe "hi! SpecialKey" .s:fmt_bold   .s:fg_base00 .s:bg_base02
-    exe "hi! NonText"    .s:fmt_bold   .s:fg_base00 .s:bg_none
+    exe "hi! NonText"    .s:fmt_bold   .s:fg_base01 .s:bg_none
 endif
 exe "hi! StatusLine"     .s:fmt_none   .s:fg_base1  .s:bg_base02 .s:fmt_revbb
 exe "hi! StatusLineNC"   .s:fmt_none   .s:fg_base00 .s:bg_base02 .s:fmt_revbb
@@ -470,8 +470,9 @@ exe "hi! IncSearch"      .s:fmt_stnd   .s:fg_orange .s:bg_none
 exe "hi! Search"         .s:fmt_revr   .s:fg_yellow .s:bg_none
 exe "hi! MoreMsg"        .s:fmt_none   .s:fg_blue   .s:bg_none
 exe "hi! ModeMsg"        .s:fmt_none   .s:fg_blue   .s:bg_none
-exe "hi! LineNr"         .s:fmt_none   .s:fg_base01 .s:bg_base02
+exe "hi! LineNr"         .s:fmt_none   .s:fg_base03 .s:bg_green
 exe "hi! Question"       .s:fmt_bold   .s:fg_cyan   .s:bg_none
+exe "hi! Whitespace"     .s:fmt_none   .s:fg_base02 .s:bg_none
 if (g:neosolarized_vertSplitBgTrans == 1)
     exe "hi! VertSplit"  .s:fmt_none   .s:fg_base00 .s:bg_none
 else
@@ -481,8 +482,8 @@ exe "hi! Title"          .s:fmt_bold   .s:fg_orange .s:bg_none
 exe "hi! VisualNOS"      .s:fmt_stnd   .s:fg_none   .s:bg_base02 .s:fmt_revbb
 exe "hi! WarningMsg"     .s:fmt_bold   .s:fg_red    .s:bg_none
 exe "hi! WildMenu"       .s:fmt_none   .s:fg_base2  .s:bg_base02 .s:fmt_revbb
-exe "hi! Folded"         .s:fmt_bold   .s:fg_base0  .s:bg_base02  .s:sp_base03
-exe "hi! FoldColumn"     .s:fmt_none   .s:fg_base0  .s:bg_base02
+exe "hi! Folded"         .s:fmt_none   .s:fg_base2 .s:bg_green  .s:sp_base03
+exe "hi! FoldColumn"     .s:fmt_none   .s:fg_base1  .s:bg_base02
 
 if (g:neosolarized_diffmode=="high")
     exe "hi! DiffAdd"        .s:fmt_revr   .s:fg_green  .s:bg_none
@@ -516,7 +517,7 @@ exe "hi! TabLineFill"    .s:fmt_none   .s:fg_base0  .s:bg_base02  .s:sp_base0
 exe "hi! TabLineSel"     .s:fmt_none   .s:fg_base01  .s:bg_base2  .s:sp_base0  .s:fmt_revr
 exe "hi! CursorColumn"   .s:fmt_none   .s:fg_none   .s:bg_base02
 exe "hi! CursorLine"     .s:fmt_uopt   .s:fg_none   .s:bg_base02  .s:sp_base1
-exe "hi! CursorLineNr"   .s:fmt_uopt   .s:fg_none   .s:bg_base02  .s:sp_base1
+exe "hi! CursorLineNr"   .s:fmt_uopt   .s:fg_base03 .s:bg_magenta .s:sp_base1
 exe "hi! ColorColumn"    .s:fmt_none   .s:fg_none   .s:bg_base02
 exe "hi! Cursor"         .s:fmt_none   .s:fg_base03 .s:bg_base0
 hi! link lCursor Cursor
