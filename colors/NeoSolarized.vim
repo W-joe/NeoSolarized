@@ -502,7 +502,7 @@ else " normal
     exe "hi! DiffText"       .s:fmt_bold   .s:fg_blue   .s:bg_base02 .s:sp_blue
 endif
 
-exe "hi! SignColumn"     .s:fmt_none   .s:fg_base0  .s:bg_none
+exe "hi! SignColumn"     .s:fmt_bold   .s:fg_base03 .s:bg_green
 exe "hi! Conceal"        .s:fmt_none   .s:fg_blue   .s:bg_none
 exe "hi! SpellBad"       .s:fmt_curl   .s:fg_none   .s:bg_none    .s:sp_red
 exe "hi! SpellCap"       .s:fmt_curl   .s:fg_none   .s:bg_none    .s:sp_violet
@@ -840,18 +840,18 @@ exe "hi! NeomakeNeomakeInfoSign"    . s:fg_green    .s:bg_none   .s:fmt_none
 
 " gitgutter highlighting "{{{
 " ---------------------------------------------------------------------
-exe "hi! GitGutterAdd"              . s:fg_green    .s:bg_none  .s:fmt_none
-exe "hi! GitGutterChange"           . s:fg_yellow   .s:bg_none  .s:fmt_none
-exe "hi! GitGutterDelete"           . s:fg_red      .s:bg_none  .s:fmt_none
-exe "hi! GitGutterChangeDelete"     . s:fg_red      .s:bg_none  .s:fmt_none
+exe "hi! GitGutterAdd"              . s:fg_base03   .s:bg_violet  .s:fmt_bold
+exe "hi! GitGutterChange"           . s:fg_base03   .s:bg_blue    .s:fmt_bold
+exe "hi! GitGutterDelete"           . s:fg_yellow   .s:bg_base03  .s:fmt_bold
+exe "hi! GitGutterChangeDelete"     . s:fg_base03   .s:bg_orange  .s:fmt_bold
 " }}}"
 
 " signify highlighting "{{{
 " ---------------------------------------------------------------------
-exe "hi! SignifySignAdd"            . s:fg_green    .s:bg_none  .s:fmt_none
-exe "hi! SignifySignChange"         . s:fg_yellow   .s:bg_none  .s:fmt_none
-exe "hi! SignifySignDelete"         . s:fg_red      .s:bg_none  .s:fmt_none
-exe "hi! SignifySignChangeDelete"   . s:fg_red      .s:bg_none  .s:fmt_none
+exe "hi! SignifySignAdd"            . s:fg_base03   .s:bg_violet  .s:fmt_bold
+exe "hi! SignifySignChange"         . s:fg_base03   .s:bg_blue    .s:fmt_bold
+exe "hi! SignifySignDelete"         . s:fg_yellow   .s:bg_base03  .s:fmt_bold
+exe "hi! SignifySignChangeDelete"   . s:fg_base03   .s:bg_orange  .s:fmt_bold
 " }}}"
 
 " ALE highlighting "{{{
