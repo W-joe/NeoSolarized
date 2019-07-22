@@ -850,10 +850,10 @@ exe "hi! GitGutterChangeDelete"     . s:fg_base03   .s:bg_orange  .s:fmt_bold
 
 " signify highlighting "{{{
 " ---------------------------------------------------------------------
-exe "hi! SignifySignAdd"            . s:fg_base03   .s:bg_violet  .s:fmt_bold
-exe "hi! SignifySignChange"         . s:fg_base03   .s:bg_blue    .s:fmt_bold
-exe "hi! SignifySignDelete"         . s:fg_yellow   .s:bg_base03  .s:fmt_bold
-exe "hi! SignifySignChangeDelete"   . s:fg_base03   .s:bg_orange  .s:fmt_bold
+exe "hi! SignifySignAdd"            . s:fg_base03   .s:bg_violet  .s:fmt_none
+exe "hi! SignifySignChange"         . s:fg_base03   .s:bg_blue    .s:fmt_none
+exe "hi! SignifySignDelete"         . s:fg_yellow   .s:bg_base03  .s:fmt_none
+exe "hi! SignifySignChangeDelete"   . s:fg_base03   .s:bg_orange  .s:fmt_none
 " }}}"
 
 " ALE highlighting "{{{
