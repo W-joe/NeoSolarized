@@ -452,14 +452,17 @@ exe "hi! Todo"           .s:fmt_bold   .s:fg_magenta.s:bg_none
 " Extended highlighting "{{{
 " ---------------------------------------------------------------------
 if  (g:neosolarized_visibility=="high")
-    exe "hi! SpecialKey" .s:fmt_revr   .s:fg_red    .s:bg_none
+    exe "hi! SpecialKey" .s:fmt_revr   .s:fg_base01 .s:bg_none
     exe "hi! NonText"    .s:fmt_bold   .s:fg_base01 .s:bg_none
+    exe "hi! Whitespace" .s:fmt_none   .s:fg_base01 .s:bg_none
 elseif  (g:neosolarized_visibility=="low")
     exe "hi! SpecialKey" .s:fmt_bold   .s:fg_base02 .s:bg_none
     exe "hi! NonText"    .s:fmt_bold   .s:fg_base02 .s:bg_none
+    exe "hi! Whitespace" .s:fmt_none   .s:fg_base02 .s:bg_none
 else
     exe "hi! SpecialKey" .s:fmt_bold   .s:fg_base00 .s:bg_base02
-    exe "hi! NonText"    .s:fmt_bold   .s:fg_base02 .s:bg_none
+    exe "hi! NonText"    .s:fmt_bold   .s:fg_base03 .s:bg_none
+    exe "hi! Whitespace" .s:fmt_none   .s:fg_base03 .s:bg_none
 endif
 exe "hi! StatusLine"     .s:fmt_none   .s:fg_base1  .s:bg_base02 .s:fmt_revbb
 exe "hi! StatusLineNC"   .s:fmt_none   .s:fg_base00 .s:bg_base02 .s:fmt_revbb
@@ -472,7 +475,6 @@ exe "hi! MoreMsg"        .s:fmt_none   .s:fg_blue   .s:bg_none
 exe "hi! ModeMsg"        .s:fmt_none   .s:fg_blue   .s:bg_none
 exe "hi! LineNr"         .s:fmt_none   .s:fg_base03 .s:bg_green
 exe "hi! Question"       .s:fmt_bold   .s:fg_cyan   .s:bg_none
-exe "hi! Whitespace"     .s:fmt_none   .s:fg_base02 .s:bg_none
 if (g:neosolarized_vertSplitBgTrans == 1)
     exe "hi! VertSplit"  .s:fmt_none   .s:fg_base00 .s:bg_none
 else
